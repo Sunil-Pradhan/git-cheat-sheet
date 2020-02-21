@@ -209,3 +209,267 @@ $ git stash drop
 ```
 
 ## Search
+
+**A text search on all files in the directory:** 
+
+```
+$ git grep "Hello"
+```
+
+## Commit & History
+
+**Show all commits, starting with newest (it'll show the hash, author information, date of commit and title of the commit):** 
+
+```
+$ git log
+```
+
+**Show all the commits(it'll show just the commit hash and the commit message):** 
+
+```
+$ git log --oneline
+```
+
+**Show all commits of a specific user:**
+
+```
+$ git log --author="username"
+```
+
+**Show changes over time for a specific file:**
+
+```
+$ git log -p <file>
+```
+
+**Display commits that are present only in remote/branch in right side:**
+
+```
+$ git log --oneline <origin/master>..<remote/master> --left-right
+```
+
+**Who changed, what and when in a file:**
+
+```
+$ git blame <file>
+```
+
+**Show Reference log:**
+
+```
+$ git reflog show
+```
+
+**Delete Reference log:**
+
+```
+$ git reflog delete
+```
+
+## Move & Rename
+
+**Rename a file:** 
+Rename Index.txt to Index.html
+
+```
+$ git mv Index.txt Index.html
+```
+
+## Branches & Tags
+
+**List all local branches:** 
+
+```
+$ git branch
+```
+
+**List local/remote branches:** 
+
+```
+$ git branch -a
+```
+
+**List all remote branches:** 
+
+```
+$ git branch -r
+```
+
+**Switch HEAD branch:** 
+
+```
+$ git checkout <branch>
+```
+
+**Checkout single file from different branch:** 
+
+```
+$ git checkout <branch> -- <filename>
+```
+
+**Create and switch new branch:** 
+
+```
+$ git checkout -b <branch>
+```
+
+**Create a new branch from an exiting branch and switch to new branch:** 
+
+```
+$ git checkout -b <new_branch> <existing_branch>
+```
+
+**Checkout and create a new branch from existing commit:** 
+
+```
+$ git checkout <commit-hash> -b <new_branch_name>
+```
+
+**Create a new branch based on your current HEAD:** 
+
+```
+$ git branch <new-branch>
+```
+
+**Create a new tracking branch based on a remote branch:** 
+
+```
+$ git branch --track <new-branch> <remote-branch>
+```
+
+**Delete a local branch:** 
+
+```
+$ git branch -d <branch>
+```
+
+**Rename current branch to new branch name:** 
+
+```
+$ git branch -m <new_branch_name>
+```
+
+**Force delete a local branch(You will lose unmerged changes):** 
+
+```
+$ git branch -D <branch>
+```
+
+**Mark HEAD with a tag:** 
+
+```
+$ git tag <tag-name>
+```
+
+**Mark HEAD with a tag and open the editor to include a message:** 
+
+```
+$ git tag -a <tag-name>
+```
+
+**Mark HEAD with a tag that includes a message:** 
+
+```
+$ git tag <tag-name> -am 'message here'
+```
+
+**List all tags:** 
+
+```
+$ git tag
+```
+
+**List all tags with their messages (tag message or commit message if tag has no message):** 
+
+```
+$ git tag -n
+```
+
+## Update & Publish
+
+**List all current configured remotes:** 
+
+```
+$ git remote -v
+```
+
+**Show information about a remote:** 
+
+```
+$ git remote show <remote>
+```
+
+**Add new remote repository, named (remote):** 
+
+```
+$ git remote add <remote> <url>
+```
+
+**Rename a remote repository, from (remote) to (new_remote):** 
+
+```
+$ git remote rename <remote> <new_remote>
+```
+
+**Remove a remote:** 
+
+```
+$ git remote rm <remote>
+```
+*Note: git remote rm does not delete the remote repository from the server. It simply removes the remote and its references from your local repository.*
+
+
+**Download all changes from (remote), but don't integrate into HEAD:** 
+
+```
+$ git fetch <remote>
+```
+
+**Download changes and directly merge/integrate into HEAD:** 
+
+```
+$ git remote pull <remote> <url>
+```
+
+**Get all changes from HEAD to local repository:** 
+
+```
+$ git pull origin master
+```
+
+**Get all changes from HEAD to local repository without a merge:** 
+
+```
+$ git pull --rebase <remote> <branch>
+```
+
+
+**Publish local changes on a remote:** 
+
+```
+$ git push remote <remote> <branch>
+```
+
+**Delete a branch on the remote:** 
+
+```
+$ git push <remote> :<branch>
+```
+OR
+
+```
+$ git push <remote> --delete <branch> (since Git v1.7.0)
+```
+
+**Publish your tags:** 
+
+```
+$ git push --tags
+```
+
+
+
+
+
+
+
