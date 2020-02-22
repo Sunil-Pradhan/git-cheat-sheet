@@ -93,7 +93,17 @@ $ git init
 **Create a new local repository in a specific directory:**
 
 ```
-$ git init <directory>
+$ git init <directoryName>
+```
+
+Example: 
+
+```
+$ cd documents
+$ mkdir mainDirectory
+$ cd mainDirectory
+$ mkdir subDirectory
+$ git init subDirectory
 ```
 
 ## Local Changes
