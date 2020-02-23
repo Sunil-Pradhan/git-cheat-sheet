@@ -96,16 +96,6 @@ $ git init
 $ git init <directoryName>
 ```
 
-Example: 
-
-```
-$ cd documents
-$ mkdir mainDirectory
-$ cd mainDirectory
-$ mkdir subDirectory
-$ git init subDirectory
-```
-
 ## Local Changes
 
 **Changes in working directory:**
@@ -114,7 +104,7 @@ $ git init subDirectory
 $ git status
 ```
 
-**Changes to tracked files:**
+**Changes made to tracked files:**
 
 ```
 $ git diff
@@ -124,6 +114,12 @@ $ git diff
 
 ```
 $ git diff <file>
+```
+
+**See difference between ID1 and ID2:**
+
+```
+$ git diff <ID1> <ID2>
 ```
 
 **Add all current changes to the next commit:**
@@ -252,6 +248,12 @@ $ git log --author="username"
 $ git log -p <file>
 ```
 
+**Show history of changes for a file with diffs:**
+
+```
+$ git log -p <file> <directory>
+```
+
 **Display commits that are present only in remote/branch in right side:**
 
 ```
@@ -262,6 +264,18 @@ $ git log --oneline <origin/master>..<remote/master> --left-right
 
 ```
 $ git blame <file>
+```
+
+**A commit identified by ID:**
+
+```
+$ git show <ID>
+```
+
+**A specific file from a specific ID:**
+
+```
+$ git show <ID>:<file>
 ```
 
 **Show Reference log:**
@@ -288,6 +302,8 @@ $ git mv Index.txt Index.html
 ## Branches & Tags
 
 **List all local branches:** 
+
+*star( * ) marks represents the current branch* 
 
 ```
 $ git branch
