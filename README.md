@@ -7,7 +7,7 @@ Git cheat sheet saves you from learning all the commands by heart. Be free to co
 ## Table of Contents
 * [Setup](#setup)
 * [Create](#Create)
-* [Local Changes](#LocalChanges)
+* [Local Changes](#Local)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
