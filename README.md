@@ -9,7 +9,18 @@ Git cheat sheet saves you from learning all the commands by heart. Be free to co
 * [Create](#Create)
 * [Local Changes](#LocalChanges)
 * [Search](#Search)
+* [Commit & History](#Commit&History)
+* [Move & Rename](#Move&Rename)
+* [Branches & Tags](#Branches&Tags)
+* [Update & Publish](#Update&Publish)
+* [Merge & Rebase](#Merge&Rebase)
+* [Undo](#Undo)
 
+**Remember!**
+
+**master** is the default development branch
+
+**origin** is the default upstream repository
 
 ## Setup
 
@@ -301,6 +312,12 @@ $ git mv Index.txt Index.html
 
 ## Branches & Tags
 
+**Create a new branch:** 
+
+```
+$ git branch <branchName>
+```
+
 **List all local branches:** 
 
 *star( * ) marks represents the current branch* 
@@ -321,7 +338,7 @@ $ git branch -a
 $ git branch -r
 ```
 
-**Switch HEAD branch:** 
+**Switch to a branch:** 
 
 ```
 $ git checkout <branch>
@@ -333,7 +350,7 @@ $ git checkout <branch>
 $ git checkout <branch> -- <filename>
 ```
 
-**Create and switch new branch:** 
+**Create and switch to new branch:** 
 
 ```
 $ git checkout -b <branch>
@@ -349,12 +366,6 @@ $ git checkout -b <new_branch> <existing_branch>
 
 ```
 $ git checkout <commit-hash> -b <new_branch_name>
-```
-
-**Create a new branch based on your current HEAD:** 
-
-```
-$ git branch <new-branch>
 ```
 
 **Create a new tracking branch based on a remote branch:** 
@@ -507,10 +518,11 @@ $ git mergetool
 
 ## Merge & Rebase
 
-**Merge branch into your current HEAD:** 
+**Merge (branch1) into (master):** 
 
 ```
-$ git merge <branch>
+$ git checkout <master>
+$ git merge <branch1>
 ```
 
 **Rebase your current HEAD onto (branch):** 
