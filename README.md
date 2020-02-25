@@ -678,6 +678,16 @@ $ git add .
 $ git commit -m "remove xyz file"
 ```
 
+## Revert
+
+**Return to the last commited state** 
+
+*This can't be undone!*
+
+```
+$ git reset --hard
+```
+
 
 
 
