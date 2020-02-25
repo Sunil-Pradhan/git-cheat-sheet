@@ -18,9 +18,13 @@ Git cheat sheet saves you from learning all the commands by heart. Be free to co
 
 **Remember!**
 
-**master** is the default development branch
+**- master** is the default development branch
 
-**origin** is the default upstream repository
+**- origin** is the default upstream repository
+
+**- Global configuration is stored in ~/.gitconfig.** ```git config --help```
+
+**- Ask for help** ```git <command> --help```
 
 ## Setup
 
@@ -574,6 +578,46 @@ to this,
 pick <commit_id>
 squash <commit_id2>
 squash <commit_id3>
+```
+
+## Resolve merge conflicts
+
+**View merge conflicts** 
+
+```
+$ git diff
+```
+
+**View merge conflicts against base file** 
+
+```
+$ git diff --base <fileName>
+```
+
+**View merge conflicts against your changes** 
+
+```
+$ git diff --ours <fileName>
+```
+
+**View merge conflicts against other changes** 
+
+```
+$ git diff --theirs <fileName>
+```
+
+**Discard a conflicting patch** 
+
+```
+$ git reset --hard
+$ git rebase --skip
+```
+
+**After resolving conflicts, merge with** 
+
+```
+$ git add <conflicting_file>
+$ git rebase --continue
 ```
 
 ## Undo
