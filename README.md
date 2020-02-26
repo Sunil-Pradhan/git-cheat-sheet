@@ -1,4 +1,4 @@
-# Git Cheat Sheet
+<h1 align="center">Git Cheat Sheet</h1>
 
 ![my certification](/images/Git-Cheat-Sheet-Banner.png)
 
