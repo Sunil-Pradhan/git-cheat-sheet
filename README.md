@@ -2,7 +2,9 @@
 
 ![my certification](/images/Git-Cheat-Sheet-Banner.png)
 
-Git cheat sheet saves you from learning all the commands by heart. Be free to contribute, update the grammar mistakes. 
+Git is the free and open source distributed version control system. This cheat sheet saves you from learning all the commands by heart and features the most important and commonly used Git commands for easy reference. 
+
+*Be free to contribute, update the grammar mistakes.*
 
 ## Table of Contents
 * [Setup](#setup)
