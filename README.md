@@ -1,6 +1,6 @@
 <h1 align="center">Git Cheat Sheet</h1>
 
-![my certification](/images/Git-Cheat-Sheet-Banner.png)
+![Git Cheat Sheet](/img/Git-Cheat-Sheet-Logo.png)
 
 Git is the free and open source distributed version control system. This cheat sheet saves you from learning all the commands by heart and features the most important and commonly used Git commands for easy reference. 
 
