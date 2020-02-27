@@ -1,11 +1,20 @@
 
 <h1 align="center">Git Cheat Sheet</h1>
 
-![Git Cheat Sheet](/img/Git-Cheat-Sheet-Logo.png)
+<p align="center">
+  <img width="500" height="208" src="https://github.com/Sunil-Pradhan/git-cheat-sheet/blob/master/img/Git-Cheat-Sheet-Logo.png">
+</p>
 
+<p align="center">
 Git is the free and open source distributed version control system. This cheat sheet saves you from learning all the commands by heart and features the most important and commonly used Git commands for easy reference. 
+</p>
 
-*Be free to contribute, update the grammar mistakes.*
+<p align="center">
+*Be free to contribute and update the grammar mistakes.*
+</p>
+
+
+
 
 ## Table of Contents
 * [Setup](#setup)
