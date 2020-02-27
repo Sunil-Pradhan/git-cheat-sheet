@@ -10,7 +10,7 @@ Git is the free and open source distributed version control system. This cheat s
 </p>
 
 <p align="center">
-*Be free to contribute and update the grammar mistakes.*
+Be free to contribute and update the grammar mistakes.
 </p>
 
 
