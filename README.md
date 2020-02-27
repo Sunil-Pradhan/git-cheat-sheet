@@ -28,15 +28,7 @@ Be free to contribute and update the grammar mistakes.
 * [Merge & Rebase](#Merge&Rebase)
 * [Undo](#Undo)
 
-**Remember!**
 
-**- master** is the default development branch
-
-**- origin** is the default upstream repository
-
-**- Global configuration is stored in ~/.gitconfig.** ```git config --help```
-
-**- Ask for help** ```git <command> --help```
 
 ## Setup
 
@@ -88,6 +80,16 @@ $ git config --global color.ui auto
 ```
 $ git config --global core.editor “code –wait”
 ```
+
+**Remember!**
+
+**- master** is the default development branch
+
+**- origin** is the default upstream repository
+
+**- Global configuration is stored in ~/.gitconfig.** ```git config --help```
+
+**- Ask for help** ```git <command> --help```
 
 ## Create
 
