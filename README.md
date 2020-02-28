@@ -33,25 +33,27 @@ Be free to contribute and update the grammar mistakes.
 ## Setup
 
 
-**Show current configuration:** 
+**Show configuration:** 
+
+***Current configuration:***
 
 ```
 $ git config --list
 ```
 
-**Show repository configuration:** 
+***Repository configuration:*** 
 
 ```
 $ git config --local --list
 ```
 
-**Show global configuration:** 
+***Global configuration:*** 
 
 ```
 $ git config --global --list
 ```
 
-**Show system configuration:** 
+***System configuration:*** 
 
 ```
 $ git config --system --list
