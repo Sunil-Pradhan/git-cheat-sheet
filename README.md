@@ -86,16 +86,15 @@ $ git config --global color.ui auto
 ```
 $ git config --global core.editor “code –wait”
 ```
+<hr>
 
-**Remember!**
+:bulb: **Remember**
 
-**- master** is the default development branch
+* **Ask for help** ```git <command> --help```
+* **master** is the default development branch
+* **origin** is the default upstream repository
+* **Global configuration is stored in ~/.gitconfig.** ```git config --help```
 
-**- origin** is the default upstream repository
-
-**- Global configuration is stored in ~/.gitconfig.** ```git config --help```
-
-**- Ask for help** ```git <command> --help```
 
 ## Create
 
