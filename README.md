@@ -98,7 +98,21 @@ $ git config --global core.editor “code –wait”
 
 ## Create
 
-**Clone an existing repository:**
+**Initializing and cloning repositories:**
+
+*Create a new local repository in the current directory:*
+
+```
+$ git init
+```
+
+*Create a new local repository in a specific directory:*
+
+```
+$ git init [directory_name]
+```
+
+*Clone an existing repository:*
 
 There are two ways:
 
@@ -118,17 +132,7 @@ $ git clone ssh://user@domain.com/repo.git
 $ git clone http://domain.com/user/repo.git
 ```
 
-**Create a new local repository in the current directory:**
 
-```
-$ git init
-```
-
-**Create a new local repository in a specific directory:**
-
-```
-$ git init <directoryName>
-```
 
 ## Local Changes
 
