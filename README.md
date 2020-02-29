@@ -120,18 +120,9 @@ There are two ways:
 
 * HTTP
 
-**By SSH:**
+By SSH: ```$ git clone ssh://user@domain.com/repo.git```
 
-```
-$ git clone ssh://user@domain.com/repo.git
-```
-
-**By HTTP:**
-
-```
-$ git clone http://domain.com/user/repo.git
-```
-
+By HTTP: ```$ git clone http://domain.com/user/repo.git```
 
 
 ## Local Changes
