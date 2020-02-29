@@ -127,41 +127,68 @@ By HTTP: ```$ git clone http://domain.com/user/repo.git```
 
 ## Local Changes
 
-**Changes in working directory:**
+**Working with snapshots and the Git staging area:**
+
+*Changes in working directory,staged for your next commit:*
 
 ```
 $ git status
 ```
 
-**Changes made to tracked files:**
+*add a file as it looks now to your next commit (stage):*
 
 ```
-$ git diff
+$ git add [File_name]
 ```
 
-**See changes/difference of a specific file:**
-
-```
-$ git diff <file>
-```
-
-**See difference between ID1 and ID2:**
-
-```
-$ git diff <ID1> <ID2>
-```
-
-**Add all current changes to the next commit:**
+*Add all current changes to the next commit:*
 
 ```
 $ git add .
 ```
 
-**Add some changes in <file> to the next commit:**
+*Add some changes in [file] to the next commit:*
 
 ```
 $ git add -p <file>
 ```
+
+*unstage a file while retaining the changes in working directory:*
+
+```
+$ git reset [file]
+```
+
+*diff of what is changed but not staged:*
+
+```
+$ git diff
+```
+
+*diff of what is staged but not yet commited:*
+
+```
+$ git diff --staged
+```
+
+*See difference of a specific file:*
+
+```
+$ git diff <file>
+```
+
+*See difference between ID1 and ID2:*
+
+```
+$ git diff [ID1] [ID2]
+```
+
+*Commit with message:*
+
+```
+$ git commit -m “[descriptive message]”
+```
+
 
 **Commit all local changes in tracked files:**
 
@@ -173,12 +200,6 @@ $ git commit -a
 
 ```
 $ git commit
-```
-
-**Commit with message:**
-
-```
-$ git commit -m 'message here'
 ```
 
 **Commit skipping the staging area and adding message:**
