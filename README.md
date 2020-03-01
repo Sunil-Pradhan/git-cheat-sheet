@@ -151,19 +151,7 @@ $ git add .
 *Add all current changes to the next commit(root and other directory):*
 
 ```
-$ git add --all
-```
-
-or
-
-```
-$ git add -A
-```
-
-or
-
-```
-$ git add *
+$ git add --all   or    $ git add -A    or    $ git add *
 ```
 
 *Unstage a file while retaining the changes in working directory:*
