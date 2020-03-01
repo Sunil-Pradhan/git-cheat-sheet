@@ -18,8 +18,8 @@ Be free to contribute and update the grammar mistakes.
 
 ## Table of Contents
 * [Setup](#setup)
-* [Create](#Create)
-* [Local Changes](#Local)
+* [Create](#create)
+* [Local Changes](#local)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
@@ -29,7 +29,7 @@ Be free to contribute and update the grammar mistakes.
 * [Undo](#Undo)
 
 
-
+<a name="setup"></a>
 ## Setup
 
 
@@ -95,6 +95,7 @@ $ git config --global core.editor “code –wait”
 * **origin** is the default upstream repository
 
 
+<a name="create"></a>
 ## Create
 
 **Initializing and cloning repositories:**
@@ -124,11 +125,12 @@ By SSH: ```$ git clone ssh://user@domain.com/repo.git```
 By HTTP: ```$ git clone http://domain.com/user/repo.git```
 
 
+<a name="local"></a>
 ## Local Changes
 
 **Working with snapshots and the Git staging area:**
 
-*Changes in working directory,staged for your next commit:*
+*Changes in working directory, staged for your next commit:*
 
 ```
 $ git status
