@@ -136,37 +136,49 @@ By HTTP: ```$ git clone http://domain.com/user/repo.git```
 $ git status
 ```
 
-*add a file as it looks now to your next commit (stage):*
+*Add a file as it looks now to your next commit (stage):*
 
 ```
 $ git add [File_name]
 ```
 
-*Add all current changes to the next commit:*
+*Add all current changes to the next commit(root directory):*
 
 ```
 $ git add .
 ```
 
-*Add some changes in [file] to the next commit:*
+*Add all current changes to the next commit(root and other directory):*
 
 ```
-$ git add -p <file>
+$ git add --all
 ```
 
-*unstage a file while retaining the changes in working directory:*
+or
+
+```
+$ git add -A
+```
+
+or
+
+```
+$ git add *
+```
+
+*Unstage a file while retaining the changes in working directory:*
 
 ```
 $ git reset [file]
 ```
 
-*diff of what is changed but not staged:*
+*Diff of what is changed but not staged:*
 
 ```
 $ git diff
 ```
 
-*diff of what is staged but not yet commited:*
+*Diff of what is staged but not yet commited:*
 
 ```
 $ git diff --staged
@@ -175,14 +187,9 @@ $ git diff --staged
 *See difference of a specific file:*
 
 ```
-$ git diff <file>
+$ git diff [file_name]
 ```
 
-*See difference between ID1 and ID2:*
-
-```
-$ git diff [ID1] [ID2]
-```
 
 *Commit with message:*
 
@@ -190,6 +197,7 @@ $ git diff [ID1] [ID2]
 $ git commit -m “[descriptive message]”
 ```
 
+<hr>
 
 **Commit all local changes in tracked files:**
 
