@@ -93,7 +93,6 @@ $ git config --global core.editor “code –wait”
 * **Ask for help** ```git <command> --help```
 * **master** is the default development branch
 * **origin** is the default upstream repository
-* **Global configuration is stored in ~/.gitconfig.** ```git config --help```
 
 
 ## Create
