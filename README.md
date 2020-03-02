@@ -20,6 +20,7 @@ Be free to contribute and update the grammar mistakes.
 * [Setup](#setup)
 * [Create](#create)
 * [Local Changes](#local)
+* [Branch and Merge](#gitbm)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
@@ -178,12 +179,31 @@ $ git diff --staged
 $ git diff [file_name]
 ```
 
-
 *Commit with message:*
 
 ```
 $ git commit -m “[descriptive message]”
 ```
+
+<hr>
+
+<a name="gitbm"></a>
+## Branch and Merge
+
+**Isolating work in branches, changing context, and integrating changes:**
+
+*Create a new branch:*
+
+```
+$ git branch [branch_name]
+```
+
+*List all local branches ([ * ]marks represents the current branch):*
+
+```
+$ git branch
+```
+
 
 <hr>
 
