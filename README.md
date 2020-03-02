@@ -204,8 +204,76 @@ $ git branch [branch_name]
 $ git branch
 ```
 
+*List local and remote branches:*
+
+```
+$ git branch -a
+```
+
+*list all remote branches:* 
+
+```
+$ git branch -r
+```
+
+*Switch to a branch:*
+
+```
+$ git checkout [branch_name]
+```
+
+*Checkout single file from different branch:*
+
+```
+$ git checkout [branch_name] -- [file_name]
+```
+
+*Create and switch to a new branch:*
+
+```
+$ git checkout -b [branch_name]
+```
+
+*Create a new branch from an exiting branch and switch to a new branch:* 
+
+```
+$ git checkout -b [new_branch_name] [existing_branch_name]
+```
+
+*Delete a local branch:*
+
+```
+$ git branch -d [branch_name]
+```
+
+*Rename current branch to new branch name:*
+
+```
+$ git branch -m [new_branch_name]
+```
+
+*Force delete a local branch(You will lose unmerged changes):* 
+
+```
+$ git branch -D [branch_name]
+```
+
+*Merge the specified branch’s history into the current one:*
+
+```
+$ git merge [branch]
+```
+
+*Show all commits in the current branch’s history:*
+
+```
+$ git log
+```
+
 
 <hr>
+
+
 
 **Commit all local changes in tracked files:**
 
@@ -368,85 +436,9 @@ $ git mv Index.txt Index.html
 
 ## Branches & Tags
 
-**Create a new branch:** 
 
-```
-$ git branch <branchName>
-```
 
-**List all local branches:** 
 
-*star( * ) marks represents the current branch* 
-
-```
-$ git branch
-```
-
-**List local/remote branches:** 
-
-```
-$ git branch -a
-```
-
-**List all remote branches:** 
-
-```
-$ git branch -r
-```
-
-**Switch to a branch:** 
-
-```
-$ git checkout <branch>
-```
-
-**Checkout single file from different branch:** 
-
-```
-$ git checkout <branch> -- <filename>
-```
-
-**Create and switch to new branch:** 
-
-```
-$ git checkout -b <branch>
-```
-
-**Create a new branch from an exiting branch and switch to new branch:** 
-
-```
-$ git checkout -b <new_branch> <existing_branch>
-```
-
-**Checkout and create a new branch from existing commit:** 
-
-```
-$ git checkout <commit-hash> -b <new_branch_name>
-```
-
-**Create a new tracking branch based on a remote branch:** 
-
-```
-$ git branch --track <new-branch> <remote-branch>
-```
-
-**Delete a local branch:** 
-
-```
-$ git branch -d <branch>
-```
-
-**Rename current branch to new branch name:** 
-
-```
-$ git branch -m <new_branch_name>
-```
-
-**Force delete a local branch(You will lose unmerged changes):** 
-
-```
-$ git branch -D <branch>
-```
 
 **Mark HEAD with a tag:** 
 
