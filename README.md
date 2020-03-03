@@ -210,7 +210,7 @@ $ git branch
 $ git branch -a
 ```
 
-*list all remote branches:* 
+*List all remote branches:* 
 
 ```
 $ git branch -r
@@ -252,12 +252,6 @@ $ git branch -d [branch_name]
 $ git branch -m [new_branch_name]
 ```
 
-*Force delete a local branch(You will lose unmerged changes):* 
-
-```
-$ git branch -D [branch_name]
-```
-
 *Merge the specified branch’s history into the current one:*
 
 ```
@@ -269,7 +263,6 @@ $ git merge [branch]
 ```
 $ git log
 ```
-
 
 <hr>
 
