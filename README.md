@@ -21,6 +21,7 @@ Be free to contribute and update the grammar mistakes.
 * [Create](#create)
 * [Local Changes](#local)
 * [Branch and Merge](#gitbm)
+* [Inspect and Compare](#gitinscom)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
@@ -266,7 +267,97 @@ $ git log
 
 <hr>
 
+<a name="gitinscom"></a>
+## Inspect and Compare
 
+**Examining logs, diffs and object information:**
+
+*Show all commits, starting with newest for the active branch (it'll show the hash, author information, date of commit and title of the commit):*
+
+```
+$ git log
+```
+
+*Show all the commits (it'll show just the commit hash and the commit message):*
+
+```
+$ git log --oneline
+```
+
+*Show all commits of a specific user:*
+
+```
+$ git log --author="username"
+```
+
+*Show the commits on branchA that are not on branchB:*
+
+```
+$ git log branchB..branchA
+```
+
+*Show changes over time for a specific file:*
+
+```
+$ git log -p [file_name]
+```
+
+*Show the commits that changed file, even across renames:*
+
+```
+$ git log --follow [file_name]
+```
+
+*Show history of changes for a file with diffs:*
+
+```
+$ git log -p [file_name] [directory_name]
+```
+
+
+*Show the diff of what is in branchA that is not in branchB:*
+
+```
+$ git diff branchB...branchA
+```
+
+*Who changed, what and when in a file:*
+
+```
+$ git blame [file_name]
+```
+
+*Show any object in Git in human-readable format:*
+
+```
+$ git show [SHA]
+```
+
+*A commit identified by ID:*
+
+```
+$ git show [ID]
+```
+
+*A specific file from a specific ID:*
+
+```
+$ git show [ID]:[file]
+```
+
+*Show Reference log:*
+
+```
+$ git reflog show
+```
+
+*Delete Reference log:*
+
+```
+$ git reflog delete
+```
+
+<hr>
 
 **Commit all local changes in tracked files:**
 
@@ -350,73 +441,7 @@ $ git stash drop
 $ git grep "Hello"
 ```
 
-## Commit & History
 
-**Show all commits, starting with newest (it'll show the hash, author information, date of commit and title of the commit):** 
-
-```
-$ git log
-```
-
-**Show all the commits(it'll show just the commit hash and the commit message):** 
-
-```
-$ git log --oneline
-```
-
-**Show all commits of a specific user:**
-
-```
-$ git log --author="username"
-```
-
-**Show changes over time for a specific file:**
-
-```
-$ git log -p <file>
-```
-
-**Show history of changes for a file with diffs:**
-
-```
-$ git log -p <file> <directory>
-```
-
-**Display commits that are present only in remote/branch in right side:**
-
-```
-$ git log --oneline <origin/master>..<remote/master> --left-right
-```
-
-**Who changed, what and when in a file:**
-
-```
-$ git blame <file>
-```
-
-**A commit identified by ID:**
-
-```
-$ git show <ID>
-```
-
-**A specific file from a specific ID:**
-
-```
-$ git show <ID>:<file>
-```
-
-**Show Reference log:**
-
-```
-$ git reflog show
-```
-
-**Delete Reference log:**
-
-```
-$ git reflog delete
-```
 
 ## Move & Rename
 
