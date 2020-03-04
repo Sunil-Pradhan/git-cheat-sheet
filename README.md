@@ -22,6 +22,7 @@ Be free to contribute and update the grammar mistakes.
 * [Local Changes](#local)
 * [Branch and Merge](#gitbm)
 * [Inspect and Compare](#gitinscom)
+* [Commit and Revert](#gitcomrev)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
@@ -314,7 +315,6 @@ $ git log --follow [file_name]
 $ git log -p [file_name] [directory_name]
 ```
 
-
 *Show the diff of what is in branchA that is not in branchB:*
 
 ```
@@ -359,53 +359,49 @@ $ git reflog delete
 
 <hr>
 
-**Commit all local changes in tracked files:**
+<a name="gitcomrev"></a>
+## Commit and Revert
+
+
+*Commit all local changes in tracked files:*
 
 ```
 $ git commit -a
 ```
 
-**Commit previously staged changes:**
+*Commit previously staged changes:*
 
 ```
 $ git commit
 ```
 
-**Commit skipping the staging area and adding message:**
+*Commit skipping the staging area and adding message:*
 
 ```
 $ git commit -am 'message here'
 ```
 
-**Commit to some previous date:**
-
-```
-$ git commit --date="`date --date='n day ago'`" -am "<Commit Message Here>"
-```
-
-**Change last commit:** (*Don't amend published commits!*)
+*Fix the last commit (after editing the broken files):*
 
 ```
 $ git commit -a --amend
 ```
 
-**Amend with last commit but use the previous commit log message:** (*Don't amend published commits!*)
+*Return to the last commited state(This can't be undone):* 
 
 ```
-$ git commit --amend --no-edit
+$ git reset --hard
 ```
 
-**Change committer date of last commit:** 
+*Revert the last commit (Create a new commit):*
 
 ```
-GIT_COMMITTER_DATE="date" git commit --amend
+$ git reset HEAD
 ```
 
-**Change Author date of last commit:** 
+<hr>
 
-```
-$ git commit --amend --date="date"
-```
+
 
 **Move uncommitted changes from current branch to some other branch:** 
 
@@ -432,6 +428,8 @@ $ git stash apply stash@{stash_number}
 ```
 $ git stash drop
 ```
+
+<hr>
 
 ## Search
 
@@ -740,15 +738,7 @@ $ git add .
 $ git commit -m "remove xyz file"
 ```
 
-## Revert
 
-**Return to the last commited state** 
-
-*This can't be undone!*
-
-```
-$ git reset --hard
-```
 
 
 
