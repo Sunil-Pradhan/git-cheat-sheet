@@ -15,7 +15,6 @@ Be free to contribute and update the grammar mistakes.
 
 
 
-
 ## Table of Contents
 * [Setup](#setup)
 * [Create](#create)
@@ -23,6 +22,7 @@ Be free to contribute and update the grammar mistakes.
 * [Branch and Merge](#gitbm)
 * [Inspect and Compare](#gitinscom)
 * [Commit and Revert](#gitcomrev)
+* [Temporary Commits](#gittempcom)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
@@ -401,33 +401,50 @@ $ git reset HEAD
 
 <hr>
 
+<a name="gittempcom"></a>
+## Temporary Commits
 
+**Temporarily store modified, tracked files in order to change branches:**
 
-**Move uncommitted changes from current branch to some other branch:** 
+*Save modified and staged changes:*
 
 ```
 $ git stash
-$ git checkout branch2
-$ git stash pop
 ```
 
-**Restore stashed changes back to current branch:** 
+*List stack-order of stashed file changes:*
+
+```
+$ git stash list
+```
+
+*Restore stashed changes back to current branch:*
 
 ```
 $ git stash apply
 ```
 
-**Restore particular stash back to current branch:** ( _{stash_number}_ can be obtained from ```git stash list``` )
+*Restore particular stash back to current branch:*
+_{stash_number}_ can be obtained from ```git stash list``` )
 
 ```
 $ git stash apply stash@{stash_number}
 ```
 
-**Remove the last set of stashed changes:** 
+*Write working from top of stash stack:* 
+
+```
+$ git stash pop
+```
+
+*Remove the last set of stashed changes:* 
 
 ```
 $ git stash drop
 ```
+
+<hr> 
+
 
 <hr>
 
