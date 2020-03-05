@@ -23,6 +23,7 @@ Be free to contribute and update the grammar mistakes.
 * [Inspect and Compare](#gitinscom)
 * [Commit and Revert](#gitcomrev)
 * [Temporary Commits](#gittempcom)
+* [Update & Publish](#gitupdpub)
 * [Search](#Search)
 * [Commit & History](#Commit&History)
 * [Move & Rename](#Move&Rename)
@@ -445,65 +446,12 @@ $ git stash drop
 
 <hr> 
 
+<a name="gitupdpub"></a>
+## Update & Publish
 
 <hr>
 
-## Search
-
-**A text search on all files in the directory:** 
-
-```
-$ git grep "Hello"
-```
-
-
-
-## Move & Rename
-
-**Rename a file:** 
-Rename Index.txt to Index.html
-
-```
-$ git mv Index.txt Index.html
-```
-
-## Branches & Tags
-
-
-
-
-
-**Mark HEAD with a tag:** 
-
-```
-$ git tag <tag-name>
-```
-
-**Mark HEAD with a tag and open the editor to include a message:** 
-
-```
-$ git tag -a <tag-name>
-```
-
-**Mark HEAD with a tag that includes a message:** 
-
-```
-$ git tag <tag-name> -am 'message here'
-```
-
-**List all tags:** 
-
-```
-$ git tag
-```
-
-**List all tags with their messages (tag message or commit message if tag has no message):** 
-
-```
-$ git tag -n
-```
-
-## Update & Publish
+### Update & Publish
 
 **List all current configured remotes:** 
 
@@ -596,6 +544,65 @@ $ git config --global merge.tool meld
 ```
 $ git mergetool
 ```
+
+<hr>
+
+## Search
+
+**A text search on all files in the directory:** 
+
+```
+$ git grep "Hello"
+```
+
+
+
+## Move & Rename
+
+**Rename a file:** 
+Rename Index.txt to Index.html
+
+```
+$ git mv Index.txt Index.html
+```
+
+## Branches & Tags
+
+
+
+
+
+**Mark HEAD with a tag:** 
+
+```
+$ git tag <tag-name>
+```
+
+**Mark HEAD with a tag and open the editor to include a message:** 
+
+```
+$ git tag -a <tag-name>
+```
+
+**Mark HEAD with a tag that includes a message:** 
+
+```
+$ git tag <tag-name> -am 'message here'
+```
+
+**List all tags:** 
+
+```
+$ git tag
+```
+
+**List all tags with their messages (tag message or commit message if tag has no message):** 
+
+```
+$ git tag -n
+```
+
+
 
 ## Merge & Rebase
 
