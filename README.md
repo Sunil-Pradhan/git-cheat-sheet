@@ -449,103 +449,114 @@ $ git stash drop
 <a name="gitupdpub"></a>
 ## Update & Publish
 
-<hr>
+**Retrieving updates from another repository and updating local repos:**
 
-### Update & Publish
-
-**List all current configured remotes:** 
+*List all current configured remote:*
 
 ```
 $ git remote -v
 ```
 
-**Show information about a remote:** 
+*Show information about a remote:*
 
 ```
-$ git remote show <remote>
+$ git remote show [remote]
 ```
 
-**Add new remote repository, named (remote):** 
+*Add new remote repository, named (remote):*
 
 ```
-$ git remote add <remote> <url>
+$ git remote add [remote] [url]
 ```
 
-**Rename a remote repository, from (remote) to (new_remote):** 
+*Rename a remote repository, from (remote) to (new_remote):*
 
 ```
-$ git remote rename <remote> <new_remote>
+$ git remote rename [remote] [new_remote]
 ```
 
-**Remove a remote:** 
+*Remove a remote:*
 
 ```
-$ git remote rm <remote>
+$ git remote rm [remote]
 ```
 *Note: git remote rm does not delete the remote repository from the server. It simply removes the remote and its references from your local repository.*
 
-
-**Download all changes from (remote), but don't integrate into HEAD:** 
-
-```
-$ git fetch <remote>
-```
-
-**Download changes and directly merge/integrate into HEAD:** 
+*Download all changes from (remote), but don't integrate into HEAD:*
 
 ```
-$ git remote pull <remote> <url>
+$ git fetch [remote]
 ```
 
-**Get all changes from HEAD to local repository:** 
+*Merge a remote branch into your current branch to bring it up to date:*
+
+```
+$ git merge [remote]/[branch_name]
+```
+
+*Fetch and merge any commits from the tracking remote branch:*
+
+```
+$ git pull
+```
+
+*Get all changes from HEAD to local repository:*
 
 ```
 $ git pull origin master
 ```
 
-**Get all changes from HEAD to local repository without a merge:** 
+*Download changes and directly merge/integrate into HEAD:*
 
 ```
-$ git pull --rebase <remote> <branch>
+$ git remote pull [remote] [url]
 ```
 
-
-**Publish local changes on a remote:** 
-
-```
-$ git push remote <remote> <branch>
-```
-
-**Delete a branch on the remote:** 
+*Get all changes from HEAD to local repository without a merge:*
 
 ```
-$ git push <remote> :<branch>
+$ git pull --rebase [remote] [branch_name]
+```
+
+*Publish local changes on a remote:*
+
+```
+$ git push remote [remote] [branch_name]
+```
+
+*Delete a branch on the remote:*
+
+```
+$ git push [remote] :[branch]
 ```
 OR
 
 ```
-$ git push <remote> --delete <branch> (since Git v1.7.0)
+$ git push [remote] --delete [branch_name] 
 ```
 
-**Publish your tags:** 
+*Delete a branch on the remote:*
+
+```
+$ git push [remote] :[branch]
+```
+OR
+
+```
+$ git push [remote] --delete [branch_name] 
+```
+
+*Publish your tags:*
 
 ```
 $ git push --tags
 ```
 
-**Configure the merge tool globally to meld (editor):** 
-
-```
-$ git config --global merge.tool meld
-```
-
-**Use your configured merge tool to solve conflicts:** 
-
-```
-$ git mergetool
-```
-
 <hr>
+
+
+
+
 
 ## Search
 
@@ -565,6 +576,8 @@ Rename Index.txt to Index.html
 ```
 $ git mv Index.txt Index.html
 ```
+
+<hr>
 
 ## Branches & Tags
 
