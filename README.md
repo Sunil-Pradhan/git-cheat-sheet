@@ -14,7 +14,6 @@ Be free to contribute and update the grammar mistakes.
 </p>
 
 
-
 ## Table of Contents
 * [Setup](#setup)
 * [Create](#create)
@@ -24,13 +23,8 @@ Be free to contribute and update the grammar mistakes.
 * [Commit and Revert](#gitcomrev)
 * [Temporary Commits](#gittempcom)
 * [Update & Publish](#gitupdpub)
-* [Search](#Search)
-* [Commit & History](#Commit&History)
-* [Move & Rename](#Move&Rename)
-* [Branches & Tags](#Branches&Tags)
-* [Update & Publish](#Update&Publish)
-* [Merge & Rebase](#Merge&Rebase)
-* [Undo](#Undo)
+* [Tracking path changes](#gittrackpathchang)
+
 
 
 <a name="setup"></a>
@@ -572,36 +566,46 @@ $ git push --tags
 
 <hr>
 
+<a name="gittrackpathchang"></a>
+## Tracking path changes
 
+**Versioning file removes and path changes:**
 
-
-<hr>
-
-## Search
-
-**A text search on all files in the directory:** 
+*A text search on all files in the directory:*
 
 ```
 $ git grep "Hello"
 ```
 
-
-
-## Move & Rename
-
-**Rename a file:** 
-Rename Index.txt to Index.html
+*Delete the file from project and stage the removal for commit:*
 
 ```
-$ git mv Index.txt Index.html
+$ git rm [file_name}
+```
+
+*Change an existing file path and stage the move:*
+
+```
+$ git mv [existing_path] [new_path]
+```
+
+*Show all commit logs with indication of any paths that moved:*
+
+```
+$ git log --stat -M
+```
+
+*Rename a file:*
+
+```
+$ git mv [old_file_name] [new_file_name]
 ```
 
 <hr>
 
+<hr>
+
 ## Branches & Tags
-
-
-
 
 
 **Mark HEAD with a tag:** 
