@@ -25,8 +25,7 @@ Be free to contribute and update the grammar mistakes.
 * [Update & Publish](#gitupdpub)
 * [Tracking path changes](#gittrackpathchang)
 * [Ignoring Patterns](#gitignpat)
-
-
+* [Tags](#gittags)
 
 
 <a name="setup"></a>
@@ -626,38 +625,46 @@ $ git config --global core.excludesfile [file_name]
 
 <hr>
 
-## Branches & Tags
+<a name="gittags"></a>
+## Tags
 
-
-**Mark HEAD with a tag:** 
-
-```
-$ git tag <tag-name>
-```
-
-**Mark HEAD with a tag and open the editor to include a message:** 
+*Mark HEAD with a tag:*
 
 ```
-$ git tag -a <tag-name>
+$ git tag [tag_name]
 ```
 
-**Mark HEAD with a tag that includes a message:** 
+*Mark HEAD with a tag and open the editor to include a message:*
 
 ```
-$ git tag <tag-name> -am 'message here'
+$ git tag -a [tag_name]
 ```
 
-**List all tags:** 
+*Mark HEAD with a tag that includes a message:*
+
+```
+$ git tag [tag_name] -am 'message goes here'
+```
+
+*List all tags:*
 
 ```
 $ git tag
 ```
 
-**List all tags with their messages (tag message or commit message if tag has no message):** 
+*List all tags with their messages (tag message or commit message if tag has no message):*
 
 ```
 $ git tag -n
 ```
+
+<hr>
+
+
+
+
+
+
 
 
 
