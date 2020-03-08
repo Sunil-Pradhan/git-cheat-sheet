@@ -26,6 +26,8 @@ Be free to contribute and update the grammar mistakes.
 * [Tracking path changes](#gittrackpathchang)
 * [Ignoring Patterns](#gitignpat)
 * [Tags](#gittags)
+* [Rewrite History](#gitrehis)
+
 
 
 <a name="setup"></a>
@@ -660,8 +662,26 @@ $ git tag -n
 
 <hr>
 
+<a name="gitrehis"></a>
+## Rewrite History
 
 
+**Rewriting branches, updating commits and clearing history:** 
+
+*Apply any commits of current branch ahead of specified one:*
+
+```
+$ git rebase [branch_name]
+```
+
+*Clear staging area, rewrite working tree from specified commit:*
+
+```
+$ git reset --hard [Commit]
+```
+<hr>
+
+<hr>
 
 
 
