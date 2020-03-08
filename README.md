@@ -24,6 +24,8 @@ Be free to contribute and update the grammar mistakes.
 * [Temporary Commits](#gittempcom)
 * [Update & Publish](#gitupdpub)
 * [Tracking path changes](#gittrackpathchang)
+* [Ignoring Patterns](#gitignpat)
+
 
 
 
@@ -602,6 +604,25 @@ $ git mv [old_file_name] [new_file_name]
 ```
 
 <hr>
+
+<a name="gitignpat"></a>
+## Ignoring Patterns
+
+**Preventing unintentional staging or commiting of files:**
+
+*Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs:*
+
+```
+logs/
+*.notes
+pattern*/
+```
+
+*System wide ignore pattern for all local repositories:*
+
+```
+$ git config --global core.excludesfile [file_name]
+```
 
 <hr>
 
