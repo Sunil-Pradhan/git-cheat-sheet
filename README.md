@@ -132,11 +132,6 @@ By HTTP: ```$ git clone http://domain.com/user/repo.git```
 
 **Working with snapshots and the Git staging area:**
 
-*Changes in working directory, staged for your next commit:*
-
-```
-$ git status
-```
 
 *Add a file as it looks now to your next commit (stage):*
 
@@ -154,6 +149,24 @@ $ git add .
 
 ```
 $ git add --all   or    $ git add -A    or    $ git add *
+```
+
+*Changes in working directory, staged for your next commit:*
+
+```
+$ git status
+```
+
+*Give the output in the short-format:*
+
+```
+$ git status -s
+```
+
+*Show the branch and tracking info even in short-format:*
+
+```
+$ git status -b
 ```
 
 *Unstage a file while retaining the changes in working directory:*
@@ -361,6 +374,11 @@ $ git reflog delete
 <a name="gitcomrev"></a>
 ## Commit and Revert
 
+*Commit with message:*
+
+```
+$ git commit -m 'message here'
+```
 
 *Commit all local changes in tracked files:*
 
@@ -380,10 +398,22 @@ $ git commit
 $ git commit -am 'message here'
 ```
 
+*Updates the last commit without creating a new commit:*
+
+```
+$ git commit --amend
+```
+
 *Fix the last commit (after editing the broken files):*
 
 ```
 $ git commit -a --amend
+```
+
+*Create a single commit on top of the current branch:*
+
+```
+$ git commit --squash
 ```
 
 *Return to the last commited state(This can't be undone):* 
