@@ -36,13 +36,13 @@ Be free to contribute and update the grammar mistakes.
 
 **Show configuration:** 
 
-*Current configuration:*
+Current configuration:
 
 ```
 $ git config --list
 ```
 
-*Repository configuration:*
+Repository configuration:
 
 ```
 $ git config --local --list
