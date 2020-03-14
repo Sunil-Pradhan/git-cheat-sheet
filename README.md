@@ -48,13 +48,13 @@ Repository configuration:
 $ git config --local --list
 ```
 
-*Global configuration:*
+Global configuration:
 
 ```
 $ git config --global --list
 ```
 
-*System configuration:*
+System configuration:
 
 ```
 $ git config --system --list
