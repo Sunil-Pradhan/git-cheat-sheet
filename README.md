@@ -136,7 +136,7 @@ By HTTP: ```$ git clone http://domain.com/user/repo.git```
 *Add a file as it looks now to your next commit (stage):*
 
 ```
-$ git add [File_name]
+$ git add [file_name]
 ```
 
 *Add all current changes to the next commit(root directory):*
