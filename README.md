@@ -76,13 +76,13 @@ Set an email address that will be associated with each history marker:
 $ git config --global user.email “[valid-email]”
 ```
 
-*Set automatic command line coloring for Git for easy reviewing:*
+Set automatic command line coloring for Git for easy reviewing:
 
 ```
 $ git config --global color.ui auto
 ```
 
-*Set global editor for commit:*
+Set global editor for commit:
 
 ```
 $ git config --global core.editor “code –wait”
