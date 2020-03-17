@@ -102,13 +102,13 @@ $ git config --global core.editor “code –wait”
 **Initializing and cloning repositories:**
 
 
-*Create a new local repository in the current directory or reinitialize an existing one:*
+Create a new local repository in the current directory or reinitialize an existing one:
 
 ```
 $ git init
 ```
 
-*Create a new local repository in a specific directory:*
+Create a new local repository in a specific directory:
 
 ```
 $ git init [directory_name]
