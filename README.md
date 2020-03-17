@@ -163,12 +163,6 @@ $ git status
 $ git status -s
 ```
 
-*Show the branch and tracking info even in short-format:*
-
-```
-$ git status -b
-```
-
 *Unstage a file while retaining the changes in working directory:*
 
 ```
