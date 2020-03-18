@@ -114,7 +114,7 @@ Create a new local repository in a specific directory:
 $ git init [directory_name]
 ```
 
-*Clone an existing repository:*
+Clone an existing repository:
 
 There are two ways:
 
@@ -133,7 +133,7 @@ By HTTP: ```$ git clone http://domain.com/user/repo.git```
 **Working with snapshots and the Git staging area:**
 
 
-*Add a file as it looks now to your next commit (stage):*
+Add a file as it looks now to your next commit (stage):
 
 ```
 $ git add [file_name]
