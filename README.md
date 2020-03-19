@@ -82,7 +82,7 @@ Set automatic command line coloring for Git for easy reviewing:
 $ git config --global color.ui auto
 ```
 
-Set global editor for commit(Visual Studio Code):
+Set global editor for commit (Visual Studio Code):
 
 ```
 $ git config --global core.editor “code –wait”
