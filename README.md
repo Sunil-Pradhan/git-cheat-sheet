@@ -139,13 +139,13 @@ Add a file as it looks now to your next commit (stage):
 $ git add [file_name]
 ```
 
-*Add all current changes to the next commit(root directory):*
+Add all current changes to the next commit(root directory):
 
 ```
 $ git add .
 ```
 
-*Add all current changes to the next commit(root and other directory):*
+Add all current changes to the next commit(root and other directory):
 
 ```
 $ git add --all   or    $ git add -A    or    $ git add *
