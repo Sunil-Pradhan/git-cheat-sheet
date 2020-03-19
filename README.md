@@ -68,6 +68,12 @@ Repository Compression (range -1 to 9):
 $ git config --global core.compression 2
 ```
 
+Diff tool (Visual Studio Code):
+
+```
+$ git config --global diff.tool vscode
+```
+
 <hr>
 
 **Configuring user information used across all local repositories**
