@@ -60,6 +60,14 @@ System configuration:
 $ git config --system --list
 ```
 
+Repository Compression (range -1 to 9):
+
+-1 is default compression level. 0 value means no compression, and 1 to 9 are various speed/size tradeoffs, 9 being slowest.
+
+```
+$ git config --global core.compression 2
+```
+
 <hr>
 
 **Configuring user information used across all local repositories**
