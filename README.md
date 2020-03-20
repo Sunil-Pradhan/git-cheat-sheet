@@ -146,6 +146,11 @@ By SSH: ```$ git clone ssh://user@domain.com/repo.git```
 
 By HTTP: ```$ git clone http://domain.com/user/repo.git```
 
+If you don’t like the name of the repository you are cloning, just type the following command in your terminal:
+
+```
+$ git clone [HTTPS or SSH Link] [new_file_name]
+```
 
 <a name="local"></a>
 ## Local Changes
