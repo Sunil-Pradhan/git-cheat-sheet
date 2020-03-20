@@ -74,6 +74,12 @@ Diff tool (Visual Studio Code):
 $ git config --global diff.tool vscode
 ```
 
+Merge tool (Visual Studio Code):
+
+```
+$ git config --global merge.tool vscode
+```
+
 <hr>
 
 **Configuring user information used across all local repositories**
