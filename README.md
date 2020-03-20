@@ -165,13 +165,13 @@ Add all current changes to the next commit(root and other directory):
 $ git add --all   or    $ git add -A    or    $ git add *
 ```
 
-*Changes in working directory, staged for your next commit:*
+Changes in working directory, staged for your next commit:
 
 ```
 $ git status
 ```
 
-*Give the output in the short-format:*
+Give the output in the short-format:
 
 ```
 $ git status -s
