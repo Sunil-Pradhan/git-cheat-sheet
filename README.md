@@ -188,13 +188,13 @@ Give the output in the short-format:
 $ git status -s
 ```
 
-*Unstage a file while retaining the changes in working directory:*
+Unstage a file while retaining the changes in working directory:
 
 ```
 $ git reset [file]
 ```
 
-*Diff of what is changed but not staged:*
+Diff of what is changed but not staged:
 
 ```
 $ git diff
