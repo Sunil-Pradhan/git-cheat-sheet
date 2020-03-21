@@ -191,7 +191,12 @@ $ git status -s
 Unstage a file while retaining the changes in working directory:
 
 ```
-$ git reset [file]
+$ git reset [file_name]
+```
+OR
+
+```
+$ git rm --cached [file_name]
 ```
 
 Diff of what is changed but not staged:
