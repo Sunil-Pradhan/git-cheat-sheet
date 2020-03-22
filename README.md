@@ -440,6 +440,12 @@ $ git commit -a --amend
 $ git commit --squash
 ```
 
+*Undo your last your commit and move HEAD pointer to a previous commit*
+
+```
+$ git reset --soft HEAD^
+```
+
 *Return to the last commited state(This can't be undone):* 
 
 ```
