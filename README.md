@@ -205,13 +205,13 @@ Diff of what is changed but not staged:
 $ git diff
 ```
 
-*Diff of what is staged but not yet commited:*
+Diff of what is staged but not yet commited:
 
 ```
 $ git diff --staged
 ```
 
-*See difference of a specific file:*
+See difference of a specific file:
 
 ```
 $ git diff [file_name]
