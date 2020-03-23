@@ -363,6 +363,12 @@ $ git diff branchB...branchA
 $ git blame [file_name]
 ```
 
+*Show the metadata and content changes of the specified commit:*
+
+```
+$ git show 
+```
+
 *Show any object in Git in human-readable format:*
 
 ```
