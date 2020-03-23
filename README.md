@@ -217,7 +217,7 @@ See difference of a specific file:
 $ git diff [file_name]
 ```
 
-*Commit with message:*
+Commit with message:
 
 ```
 $ git commit -m “[descriptive message]”
@@ -230,13 +230,13 @@ $ git commit -m “[descriptive message]”
 
 **Isolating work in branches, changing context, and integrating changes:**
 
-*Create a new branch:*
+Create a new branch:
 
 ```
 $ git branch [branch_name]
 ```
 
-*List all local branches ([ * ]marks represents the current branch):*
+List all local branches ([ * ]marks represents the current branch):
 
 ```
 $ git branch
