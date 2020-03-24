@@ -242,13 +242,13 @@ List all local branches ([ * ]marks represents the current branch):
 $ git branch
 ```
 
-*List local and remote branches:*
+List local and remote branches:
 
 ```
 $ git branch -a
 ```
 
-*List all remote branches:* 
+List all remote branches:
 
 ```
 $ git branch -r
