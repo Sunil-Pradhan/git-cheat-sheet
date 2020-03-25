@@ -254,13 +254,13 @@ List all remote branches:
 $ git branch -r
 ```
 
-*Switch to a branch:*
+Switch to a branch:
 
 ```
 $ git checkout [branch_name]
 ```
 
-*Checkout single file from different branch:*
+Checkout single file from different branch:
 
 ```
 $ git checkout [branch_name] -- [file_name]
