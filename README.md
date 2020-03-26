@@ -87,13 +87,13 @@ $ git config --global merge.tool vscode
 Set a name that is identifiable for credit when review version history:
 
 ```
-$ git config --global user.name “[firstname lastname]”
+$ git config --global user.name “Github-username”
 ```
 
 Set an email address that will be associated with each history marker:
 
 ```
-$ git config --global user.email “[valid-email]”
+$ git config --global user.email “Github-email-id”
 ```
 
 Set automatic command line coloring for Git for easy reviewing:
