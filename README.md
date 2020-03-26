@@ -266,13 +266,13 @@ Checkout single file from different branch:
 $ git checkout [branch_name] -- [file_name]
 ```
 
-*Create and switch to a new branch:*
+Create and switch to a new branch:
 
 ```
 $ git checkout -b [branch_name]
 ```
 
-*Create a new branch from an exiting branch and switch to a new branch:* 
+Create a new branch from an exiting branch and switch to a new branch:
 
 ```
 $ git checkout -b [new_branch_name] [existing_branch_name]
