@@ -428,6 +428,12 @@ $ git commit
 $ git commit -am 'message here'
 ```
 
+OR,
+
+```
+$ git commit -a -m 'message here'
+```
+
 *Updates the last commit without creating a new commit:*
 
 ```
