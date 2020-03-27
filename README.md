@@ -278,13 +278,13 @@ Create a new branch from an exiting branch and switch to a new branch:
 $ git checkout -b [new_branch_name] [existing_branch_name]
 ```
 
-*Delete a local branch:*
+Delete a local branch:
 
 ```
 $ git branch -d [branch_name]
 ```
 
-*Rename current branch to new branch name:*
+Rename current branch to new branch name:
 
 ```
 $ git branch -m [new_branch_name]
