@@ -446,7 +446,7 @@ $ git commit --amend
 $ git commit -a --amend
 ```
 
-*Amend a file then commit in terminal(fresh new commit):*
+*Amend a file then commit in terminal (fresh new commit will be created):*
 
 ```
 $ git add [file_name]
