@@ -434,16 +434,26 @@ OR,
 $ git commit -a -m 'message here'
 ```
 
-*Updates the last commit without creating a new commit:*
+*Updates the last commit without creating a new commit(default editor will open - VS Code):*
 
 ```
 $ git commit --amend
 ```
 
-*Fix the last commit (after editing the broken files):*
+*Fix the last commit (after editing the broken files - default editor will open - VS Code):*
 
 ```
 $ git commit -a --amend
+```
+
+*Amend a file then commit in terminal(fresh new commit):*
+
+```
+$ git add [file_name]
+```
+
+```
+$ git commit --amend -m 'commit message goes here'
 ```
 
 *Create a single commit on top of the current branch:*
