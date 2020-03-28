@@ -290,13 +290,13 @@ Rename current branch to new branch name:
 $ git branch -m [new_branch_name]
 ```
 
-*Merge the specified branch’s history into the current one:*
+Merge the specified branch’s history into the current one:
 
 ```
 $ git merge [branch]
 ```
 
-*Show all commits in the current branch’s history:*
+Show all commits in the current branch’s history:
 
 ```
 $ git log
