@@ -309,25 +309,25 @@ $ git log
 
 **Examining logs, diffs and object information:**
 
-*Show all commits, starting with newest for the active branch (it'll show the hash, author information, date of commit and title of the commit):*
+Show all commits, starting with newest for the active branch (it'll show the hash, author information, date of commit and title of the commit):
 
 ```
 $ git log
 ```
 
-*Show all the commits (it'll show just the commit hash and the commit message):*
+Show all the commits (it'll show just the commit hash and the commit message):
 
 ```
 $ git log --oneline
 ```
 
-*Show all commits of a specific user:*
+Show all commits of a specific user:
 
 ```
 $ git log --author="username"
 ```
 
-*Show the commits on branchA that are not on branchB:*
+Show the commits on branchA that are not on branchB:
 
 ```
 $ git log branchB..branchA
