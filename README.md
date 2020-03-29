@@ -622,6 +622,16 @@ $ git pull --rebase [remote] [branch_name]
 $ git push remote [remote] [branch_name]
 ```
 
+OR
+
+*Here remote server is origin and branch is master*
+
+```
+$ git push -u origin master
+```
+
+*By using this command, next time when you publish your local changes to remote then use: ```$ git push ```*
+
 *Delete a branch on the remote:*
 
 ```
