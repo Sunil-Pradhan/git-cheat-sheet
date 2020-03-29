@@ -561,10 +561,10 @@ $ git remote -v
 $ git remote show [remote]
 ```
 
-*Add new remote repository, named (remote):*
+*Add new remote repository, named (origin):*
 
 ```
-$ git remote add [remote] [url]
+$ git remote add origin [HTTPS URL]
 ```
 
 *Rename a remote repository, from (remote) to (new_remote):*
