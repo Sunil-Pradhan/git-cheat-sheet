@@ -333,31 +333,31 @@ Show the commits on branchA that are not on branchB:
 $ git log branchB..branchA
 ```
 
-*Show changes over time for a specific file:*
+Show changes over time for a specific file:
 
 ```
 $ git log -p [file_name]
 ```
 
-*Show the commits that changed file, even across renames:*
+Show the commits that changed file, even across renames:
 
 ```
 $ git log --follow [file_name]
 ```
 
-*Show history of changes for a file with diffs:*
+Show history of changes for a file with diffs:
 
 ```
 $ git log -p [file_name] [directory_name]
 ```
 
-*Show the diff of what is in branchA that is not in branchB:*
+Show the diff of what is in branchA that is not in branchB:
 
 ```
 $ git diff branchB...branchA
 ```
 
-*Who changed, what and when in a file:*
+Who changed, what and when in a file:
 
 ```
 $ git blame [file_name]
