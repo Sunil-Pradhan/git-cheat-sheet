@@ -741,6 +741,12 @@ $ git tag -a [tag_name]
 $ git tag [tag_name] -am 'message goes here'
 ```
 
+OR
+
+```
+$ git tag [tag_name] -m 'message goes here'
+```
+
 *List all tags:*
 
 ```
