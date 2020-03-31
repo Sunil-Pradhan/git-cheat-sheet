@@ -363,37 +363,37 @@ Who changed, what and when in a file:
 $ git blame [file_name]
 ```
 
-*Show the metadata and content changes of the specified commit:*
+Show the metadata and content changes of the specified commit:
 
 ```
 $ git show 
 ```
 
-*Show any object in Git in human-readable format:*
+Show any object in Git in human-readable format:
 
 ```
 $ git show [SHA]
 ```
 
-*A commit identified by ID:*
+A commit identified by ID:
 
 ```
 $ git show [ID]
 ```
 
-*A specific file from a specific ID:*
+A specific file from a specific ID:
 
 ```
 $ git show [ID]:[file]
 ```
 
-*Show Reference log:*
+Show Reference log:
 
 ```
 $ git reflog show
 ```
 
-*Delete Reference log:*
+Delete Reference log:
 
 ```
 $ git reflog delete
