@@ -660,6 +660,12 @@ $ git push [remote] --delete [branch_name]
 $ git push --tags
 ```
 
+*Publish your tags to remote repository:*
+
+```
+$ git push [remote] tag [tag_name]
+```
+
 <hr>
 
 <a name="gittrackpathchang"></a>
