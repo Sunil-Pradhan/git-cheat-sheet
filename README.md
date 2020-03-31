@@ -753,6 +753,12 @@ OR
 $ git tag -a [tag_name] -m [message goes here]
 ```
 
+*Tag a particular commit with hash number(Commit id) instead of the HEAD pointer:*
+
+```
+$ git tag [tag_name] [hash_number]
+```
+
 *List all tags:*
 
 ```
