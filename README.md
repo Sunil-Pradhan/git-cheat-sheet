@@ -768,7 +768,13 @@ $ git tag -n
 *Delete a tag from local repository:*
 
 ```
-$ git tag -d [tag_name}
+$ git tag -d [tag_name]
+```
+
+*Delete a tag from remote repository:*
+
+```
+$ git push [remote] :[tag_name]
 ```
 
 <hr>
