@@ -765,6 +765,12 @@ $ git tag
 $ git tag -n
 ```
 
+*Delete a tag from local repository:*
+
+```
+$ git tag -d [tag_name}
+```
+
 <hr>
 
 <a name="gitrehis"></a>
