@@ -738,13 +738,13 @@ $ git tag -a [tag_name]
 *Mark HEAD with a tag that includes a message:*
 
 ```
-$ git tag [tag_name] -am 'message goes here'
+$ git tag [tag_name] -am [message goes here]
 ```
 
 OR
 
 ```
-$ git tag [tag_name] -m 'message goes here'
+$ git tag -a [tag_name] -m [message goes here]
 ```
 
 *List all tags:*
