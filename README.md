@@ -199,6 +199,12 @@ OR
 $ git rm --cached [file_name]
 ```
 
+Remove untracked files from your repository:
+
+```
+$ git clean -f
+```
+
 Diff of what is changed but not staged:
 
 ```
