@@ -673,10 +673,22 @@ $ git push [remote] tag [tag_name]
 
 **Versioning file removes and path changes:**
 
-*A text search on all files in the directory:*
+*A text search on all files in the directory (without count number):*
 
 ```
 $ git grep "Hello"
+```
+
+*A text search on all files in the directory (with count number):*
+
+```
+$ git grep -n "Hello"
+```
+
+*A text search on all files in the directory (only count number):*
+
+```
+$ git grep -c "Hello"
 ```
 
 *Delete the file from project and stage the removal for commit:*
