@@ -404,19 +404,19 @@ $ git reflog delete
 <a name="gitcomrev"></a>
 ## Commit and Revert
 
-*Commit with message:*
+Commit with message:
 
 ```
 $ git commit -m 'message here'
 ```
 
-*Commit all local changes in tracked files:*
+Commit all local changes in tracked files:
 
 ```
 $ git commit -a
 ```
 
-*Commit previously staged changes:*
+Commit previously staged changes:
 
 ```
 $ git commit
