@@ -428,7 +428,7 @@ Commit previously staged changes:
 $ git commit
 ```
 
-*Commit skipping the staging area and adding message:*
+Commit skipping the staging area and adding message:
 
 ```
 $ git commit -am 'message here'
@@ -440,19 +440,19 @@ OR,
 $ git commit -a -m 'message here'
 ```
 
-*Updates the last commit without creating a new commit(default editor will open - VS Code):*
+Updates the last commit without creating a new commit(default editor will open - VS Code):
 
 ```
 $ git commit --amend
 ```
 
-*Fix the last commit (after editing the broken files - default editor will open - VS Code):*
+Fix the last commit (after editing the broken files - default editor will open - VS Code):
 
 ```
 $ git commit -a --amend
 ```
 
-*Amend a file then commit in terminal (fresh new commit will be created):*
+Amend a file then commit in terminal (fresh new commit will be created):
 
 ```
 $ git add [file_name]
@@ -462,7 +462,7 @@ $ git add [file_name]
 $ git commit --amend -m 'commit message goes here'
 ```
 
-*Create a single commit on top of the current branch:*
+Create a single commit on top of the current branch:
 
 ```
 $ git commit --squash
