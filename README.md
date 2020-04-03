@@ -468,37 +468,37 @@ Create a single commit on top of the current branch:
 $ git commit --squash
 ```
 
-*Undo your last your commit and move HEAD pointer to a previous commit*
+Undo your last your commit and move HEAD pointer to a previous commit:
 
 ```
 $ git reset --soft HEAD^
 ```
 
-*Return to the last commited state(This can't be undone):* 
+Return to the last commited state(This can't be undone):
 
 ```
 $ git reset --hard
 ```
 
-*Discard all local changes in your working directory:*
+Discard all local changes in your working directory:
 
 ```
 $ git reset --hard HEAD
 ```
 
-*Revert the last commit (Create a new commit):*
+Revert the last commit (Create a new commit):
 
 ```
 $ git reset HEAD
 ```
 
-*Revert a commit (by producing a new commit with contrary changes):*
+Revert a commit (by producing a new commit with contrary changes):
 
 ```
 $ git revert [commit]
 ```
 
-*Reset your HEAD pointer to a previous commit and discard all changes since then:*
+Reset your HEAD pointer to a previous commit and discard all changes since then:
 
 ```
 $ git reset --hard [commit]
