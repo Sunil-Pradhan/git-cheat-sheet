@@ -530,7 +530,7 @@ $ git stash apply
 ```
 
 Restore particular stash back to current branch:
-_{stash_number}_ can be obtained from ```git stash list``` )
+_{stash_number}_ can be obtained from ```git stash list``` 
 
 ```
 $ git stash apply stash@{stash_number}
