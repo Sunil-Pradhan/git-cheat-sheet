@@ -511,25 +511,25 @@ $ git reset --hard [commit]
 
 **Temporarily store modified, tracked files in order to change branches:**
 
-*Save modified and staged changes:*
+Save modified and staged changes:
 
 ```
 $ git stash
 ```
 
-*List stack-order of stashed file changes:*
+List stack-order of stashed file changes:
 
 ```
 $ git stash list
 ```
 
-*Restore stashed changes back to current branch:*
+Restore stashed changes back to current branch:
 
 ```
 $ git stash apply
 ```
 
-*Restore particular stash back to current branch:*
+Restore particular stash back to current branch:
 _{stash_number}_ can be obtained from ```git stash list``` )
 
 ```
