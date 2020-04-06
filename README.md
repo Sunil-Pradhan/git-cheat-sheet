@@ -536,13 +536,13 @@ _{stash_number}_ can be obtained from ```git stash list```
 $ git stash apply stash@{stash_number}
 ```
 
-*Write working from top of stash stack:* 
+Write working from top of stash stack:
 
 ```
 $ git stash pop
 ```
 
-*Remove the last set of stashed changes:* 
+Remove the last set of stashed changes:
 
 ```
 $ git stash drop
