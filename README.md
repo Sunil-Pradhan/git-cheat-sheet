@@ -555,74 +555,74 @@ $ git stash drop
 
 **Retrieving updates from another repository and updating local repos:**
 
-*List all current configured remote:*
+List all current configured remote:
 
 ```
 $ git remote -v
 ```
 
-*Show information about a remote:*
+Show information about a remote:
 
 ```
 $ git remote show [remote]
 ```
 
-*Add new remote repository, named (origin):*
+Add new remote repository, named (origin):
 
 ```
 $ git remote add origin [HTTPS URL]
 ```
 
-*Rename a remote repository, from (remote) to (new_remote):*
+Rename a remote repository, from (remote) to (new_remote):
 
 ```
 $ git remote rename [remote] [new_remote]
 ```
 
-*Remove a remote:*
+Remove a remote:
 
 ```
 $ git remote rm [remote]
 ```
 *Note: git remote rm does not delete the remote repository from the server. It simply removes the remote and its references from your local repository.*
 
-*Download all changes from (remote), but don't integrate into HEAD:*
+Download all changes from (remote), but don't integrate into HEAD:
 
 ```
 $ git fetch [remote]
 ```
 
-*Merge a remote branch into your current branch to bring it up to date:*
+Merge a remote branch into your current branch to bring it up to date:
 
 ```
 $ git merge [remote]/[branch_name]
 ```
 
-*Fetch and merge any commits from the tracking remote branch:*
+Fetch and merge any commits from the tracking remote branch:
 
 ```
 $ git pull
 ```
 
-*Get all changes from HEAD to local repository:*
+Get all changes from HEAD to local repository:
 
 ```
 $ git pull origin master
 ```
 
-*Download changes and directly merge/integrate into HEAD:*
+Download changes and directly merge/integrate into HEAD:
 
 ```
 $ git remote pull [remote] [url]
 ```
 
-*Get all changes from HEAD to local repository without a merge:*
+Get all changes from HEAD to local repository without a merge:
 
 ```
 $ git pull --rebase [remote] [branch_name]
 ```
 
-*Publish local changes on a remote:*
+Publish local changes on a remote:
 
 ```
 $ git push remote [remote] [branch_name]
@@ -630,7 +630,7 @@ $ git push remote [remote] [branch_name]
 
 OR
 
-*Here remote server is origin and branch is master*
+Here remote server is origin and branch is master
 
 ```
 $ git push -u origin master
@@ -638,7 +638,7 @@ $ git push -u origin master
 
 *By using this command, next time when you publish your local changes to remote then use: ```$ git push ```*
 
-*Delete a branch on the remote:*
+Delete a branch on the remote:
 
 ```
 $ git push [remote] :[branch]
@@ -649,7 +649,7 @@ OR
 $ git push [remote] --delete [branch_name] 
 ```
 
-*Delete a branch on the remote:*
+Delete a branch on the remote:
 
 ```
 $ git push [remote] :[branch]
@@ -660,13 +660,13 @@ OR
 $ git push [remote] --delete [branch_name] 
 ```
 
-*Publish your tags:*
+*ublish your tags:
 
 ```
 $ git push --tags
 ```
 
-*Publish your tags to remote repository:*
+Publish your tags to remote repository:
 
 ```
 $ git push [remote] tag [tag_name]
