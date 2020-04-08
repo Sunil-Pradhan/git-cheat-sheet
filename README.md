@@ -660,7 +660,7 @@ OR
 $ git push [remote] --delete [branch_name] 
 ```
 
-*ublish your tags:
+Publish your tags
 
 ```
 $ git push --tags
@@ -679,43 +679,43 @@ $ git push [remote] tag [tag_name]
 
 **Versioning file removes and path changes:**
 
-*A text search on all files in the directory (without count number):*
+A text search on all files in the directory (without count number):
 
 ```
 $ git grep "Hello"
 ```
 
-*A text search on all files in the directory (with count number):*
+A text search on all files in the directory (with count number):
 
 ```
 $ git grep -n "Hello"
 ```
 
-*A text search on all files in the directory (only count number):*
+A text search on all files in the directory (only count number):
 
 ```
 $ git grep -c "Hello"
 ```
 
-*Delete the file from project and stage the removal for commit:*
+Delete the file from project and stage the removal for commit:
 
 ```
 $ git rm [file_name}
 ```
 
-*Change an existing file path and stage the move:*
+Change an existing file path and stage the move:
 
 ```
 $ git mv [existing_path] [new_path]
 ```
 
-*Show all commit logs with indication of any paths that moved:*
+Show all commit logs with indication of any paths that moved:
 
 ```
 $ git log --stat -M
 ```
 
-*Rename a file:*
+Rename a file:
 
 ```
 $ git mv [old_file_name] [new_file_name]
