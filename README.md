@@ -728,7 +728,7 @@ $ git mv [old_file_name] [new_file_name]
 
 **Preventing unintentional staging or commiting of files:**
 
-*Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs:*
+Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs:
 
 ```
 logs/
@@ -736,7 +736,7 @@ logs/
 pattern*/
 ```
 
-*System wide ignore pattern for all local repositories:*
+System wide ignore pattern for all local repositories:
 
 ```
 $ git config --global core.excludesfile [file_name]
@@ -747,19 +747,19 @@ $ git config --global core.excludesfile [file_name]
 <a name="gittags"></a>
 ## Tags
 
-*Mark HEAD with a tag:*
+Mark HEAD with a tag:
 
 ```
 $ git tag [tag_name]
 ```
 
-*Mark HEAD with a tag and open the editor to include a message:*
+Mark HEAD with a tag and open the editor to include a message:
 
 ```
 $ git tag -a [tag_name]
 ```
 
-*Mark HEAD with a tag that includes a message:*
+Mark HEAD with a tag that includes a message:
 
 ```
 $ git tag [tag_name] -am [message goes here]
@@ -771,31 +771,31 @@ OR
 $ git tag -a [tag_name] -m [message goes here]
 ```
 
-*Tag a particular commit with hash number(Commit id) instead of the HEAD pointer:*
+Tag a particular commit with hash number(Commit id) instead of the HEAD pointer:
 
 ```
 $ git tag [tag_name] [hash_number]
 ```
 
-*List all tags:*
+List all tags:
 
 ```
 $ git tag
 ```
 
-*List all tags with their messages (tag message or commit message if tag has no message):*
+List all tags with their messages (tag message or commit message if tag has no message):
 
 ```
 $ git tag -n
 ```
 
-*Delete a tag from local repository:*
+Delete a tag from local repository:
 
 ```
 $ git tag -d [tag_name]
 ```
 
-*Delete a tag from remote repository:*
+Delete a tag from remote repository:
 
 ```
 $ git push [remote] :[tag_name]
@@ -809,13 +809,13 @@ $ git push [remote] :[tag_name]
 
 **Rewriting branches, updating commits and clearing history:** 
 
-*Apply any commits of current branch ahead of specified one:*
+Apply any commits of current branch ahead of specified one:
 
 ```
 $ git rebase [branch_name]
 ```
 
-*Clear staging area, rewrite working tree from specified commit:*
+Clear staging area, rewrite working tree from specified commit:
 
 ```
 $ git reset --hard [Commit]
