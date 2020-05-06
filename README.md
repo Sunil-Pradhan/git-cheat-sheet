@@ -815,7 +815,7 @@ Apply any commits of current branch ahead of specified one:
 $ git rebase [branch_name]
 ```
 
-Clear staging area, rewrite working tree from specified commit:
+_Clear staging area, rewrite working tree from specified commit:_
 
 ```
 $ git reset --hard [Commit]
